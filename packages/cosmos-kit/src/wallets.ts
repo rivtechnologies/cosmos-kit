@@ -211,5 +211,5 @@ export const wallets = createAllWalletList([
   ...tailwind,
   ...owallet,
   ...cdcwallet,
-  --- galaxystation,
+  ...galaxystation,
 ]);
