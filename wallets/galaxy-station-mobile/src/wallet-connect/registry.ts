@@ -41,21 +41,13 @@ export const GalaxyStationMobileInfo: Wallet = {
       },
     },
     formatNativeUrl: (
-      appUrl: string,
+      _appUrl: string,
       wcUri: string,
-      os: OS | undefined,
+      _os: OS | undefined,
       _name: string
     ): string => {
-      const plainAppUrl = appUrl.split(':')[0];
       const encodedWcUrl = encodeURIComponent(wcUri);
-      switch (os) {
-        case 'ios':
-          return `https://station.hexxagon.io/wcV2?${encodedWcUrl}`;
-        case 'android':
-          return `https://station.hexxagon.io/wcV2?${encodedWcUrl}`;
-        default:
-          return `https://station.hexxagon.io/wcV2?${encodedWcUrl}`;
-      }
+      return `https://station.hexxagon.io/wcV2?${encodedWcUrl}`;
     },
   },
 };
