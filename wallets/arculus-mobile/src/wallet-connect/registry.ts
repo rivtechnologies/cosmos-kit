@@ -33,7 +33,14 @@ export const ArculusMobileInfo: Wallet = {
     name: 'Arculus Wallet',
     projectId:
       'd5235b42fc7273823b6dc3214c822da3',
-    encoding: 'base64',
+    encoding: {
+      default: 'proto',
+      chains: {
+        'pio-mainnet-1': 'base64',
+        'osmosis-1': 'proto',
+        'cosmoshub-4': 'proto',
+      },
+    },
     mobile: {
       native: {
         ios: 'arculuswc:',
