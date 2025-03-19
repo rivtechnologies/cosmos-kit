@@ -31,16 +31,8 @@ export const ArculusMobileInfo: Wallet = {
   connectEventNamesOnWindow: ['arculus_keystorechange'],
   walletconnect: {
     name: 'Arculus Wallet',
-    projectId:
-      'd5235b42fc7273823b6dc3214c822da3',
-    encoding: {
-      default: 'proto',
-      chains: {
-        'pio-mainnet-1': 'base64',
-        'osmosis-1': 'proto',
-        'cosmoshub-4': 'proto',
-      },
-    },
+    projectId: 'd5235b42fc7273823b6dc3214c822da3',
+    encoding: 'hex',
     mobile: {
       native: {
         ios: 'arculuswc:',
