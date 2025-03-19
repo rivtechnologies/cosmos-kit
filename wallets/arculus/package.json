@@ -2,10 +2,10 @@
   "name": "@cosmos-kit/arculus",
   "version": "0.1.0",
   "description": "cosmos-kit wallet connector",
-  "author": "jostrom@arculus.co",
+  "author": "arculusdevelopers@composecure.com",
   "contributors": [
     {
-      "name": "John Ostrom"
+      "name": "Arculus Developers"
     }
   ],
   "homepage": "https://github.com/hyperweb-io/cosmos-kit#readme",
