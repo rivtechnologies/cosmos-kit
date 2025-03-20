@@ -32,7 +32,6 @@ export const ArculusMobileInfo: Wallet = {
   walletconnect: {
     name: 'Arculus Wallet',
     projectId: 'd5235b42fc7273823b6dc3214c822da3',
-    encoding: 'hex',
     mobile: {
       native: {
         ios: 'arculuswc:',
