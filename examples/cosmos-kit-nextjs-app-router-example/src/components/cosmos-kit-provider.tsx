@@ -12,6 +12,7 @@ export function CosmosKitProvider({ children }: { children: React.ReactNode }) {
       assetLists={assets}
       wallets={wallets}
       logLevel={"DEBUG"}
+      throwErrors={false}
     >
       {children}
     </ChainProvider>

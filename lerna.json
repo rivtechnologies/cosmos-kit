@@ -8,7 +8,7 @@
   "packages": [
     "packages/*",
     "wallets/*",
-    "apps/*"
+    "examples/*"
   ],
   "version": "independent",
   "registry": "https://registry.npmjs.org",

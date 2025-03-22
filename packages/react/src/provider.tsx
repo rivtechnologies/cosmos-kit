@@ -100,6 +100,7 @@ export const ChainProvider = ({
   }
 
   logger.debug('Using default wallet modal.');
+  console.log('Using locally built cosmos kit');
 
   const defaultModal = useCallback(
     (props: WalletModalProps) => (
