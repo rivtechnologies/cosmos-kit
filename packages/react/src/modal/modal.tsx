@@ -65,7 +65,7 @@ export function WalletModal({
   modalChildrenClassName,
   modalContentStyles,
 }: WalletModalComponentProps) {
-  const initialFocus = useRef();
+  const initialFocus = useRef<HTMLButtonElement>(null);
   const [currentView, setCurrentView] = useState<ModalView>(
     ModalView.WalletList
   );
@@ -81,8 +81,10 @@ export function WalletModal({
     beforeConnect: { disconnect: disconnectOptions },
   });
 
-  const { selectedWalletRepoName } = useSelectedWalletRepoContext()
-  const current = walletRepo?.wallets.find(w => w.walletName === selectedWalletRepoName);
+  const { selectedWalletRepoName } = useSelectedWalletRepoContext();
+  const current = walletRepo?.wallets.find(
+    (w) => w.walletName === selectedWalletRepoName
+  );
 
   (current?.client as any)?.setActions?.({
     qrUrl: {

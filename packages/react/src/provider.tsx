@@ -14,7 +14,7 @@ import {
 } from '@cosmos-kit/core';
 import { ChainProvider as ChainProviderLite } from '@cosmos-kit/react-lite';
 import { Origin } from '@dao-dao/cosmiframe';
-import { ReactNode, useCallback, useMemo } from 'react';
+import { ReactElement, ReactNode, useCallback, useMemo } from 'react';
 
 import { SelectedWalletRepoProvider } from './context';
 import { ThemeCustomizationProps, WalletModal } from './modal';
@@ -26,7 +26,7 @@ export const ChainProvider = ({
   wallets,
   walletModal,
   modalViews,
-  throwErrors = false,
+  throwErrors: propThrowErrors,
   subscribeConnectEvents = true,
   defaultNameService = 'icns',
   walletConnectOptions,
@@ -42,9 +42,9 @@ export const ChainProvider = ({
   chains: (Chain | ChainName)[];
   assetLists?: AssetList[];
   wallets: MainWalletBase[];
-  walletModal?: (props: WalletModalProps) => JSX.Element;
+  walletModal?: (props: WalletModalProps) => ReactElement;
   modalViews?: typeof defaultModalViews;
-  throwErrors?: boolean | 'connect_only';
+  throwErrors: boolean | 'connect_only';
   subscribeConnectEvents?: boolean;
   defaultNameService?: NameServiceName;
   walletConnectOptions?: WalletConnectOptions; // SignClientOptions is required if using wallet connect v2
@@ -65,29 +65,34 @@ export const ChainProvider = ({
 }) => {
   const logger = useMemo(() => new Logger(logLevel), []);
 
+  const throwErrors =
+    propThrowErrors === 'connect_only' ? false : Boolean(propThrowErrors);
+
   const withChainProvider = (
-    modal: (props: WalletModalProps) => JSX.Element
-  ) => (
-    <SelectedWalletRepoProvider>
-      <ChainProviderLite
-        chains={chains}
-        assetLists={assetLists}
-        wallets={wallets}
-        walletModal={modal}
-        throwErrors={throwErrors}
-        subscribeConnectEvents={subscribeConnectEvents}
-        defaultNameService={defaultNameService}
-        walletConnectOptions={walletConnectOptions}
-        signerOptions={signerOptions}
-        endpointOptions={endpointOptions}
-        sessionOptions={sessionOptions}
-        logLevel={logLevel}
-        allowedIframeParentOrigins={allowedIframeParentOrigins}
-      >
-        {children}
-      </ChainProviderLite>
-    </SelectedWalletRepoProvider>
-  );
+    modal: (props: WalletModalProps) => ReactElement
+  ) => {
+    return (
+      <SelectedWalletRepoProvider>
+        <ChainProviderLite
+          chains={chains}
+          assetLists={assetLists}
+          wallets={wallets}
+          walletModal={modal}
+          throwErrors={throwErrors}
+          subscribeConnectEvents={subscribeConnectEvents}
+          defaultNameService={defaultNameService}
+          walletConnectOptions={walletConnectOptions}
+          signerOptions={signerOptions}
+          endpointOptions={endpointOptions}
+          sessionOptions={sessionOptions}
+          logLevel={logLevel}
+          allowedIframeParentOrigins={allowedIframeParentOrigins}
+        >
+          {children}
+        </ChainProviderLite>
+      </SelectedWalletRepoProvider>
+    );
+  };
 
   if (walletModal) {
     logger.debug('Using provided wallet modal.');
@@ -108,7 +113,7 @@ export const ChainProvider = ({
         modalOptions={modalOptions}
       />
     ),
-    [defaultModalViews]
+    [defaultModalViews, modalTheme, modalViews, modalOptions]
   );
   return withChainProvider(defaultModal);
 };
