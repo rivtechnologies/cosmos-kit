@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.29.0](https://github.com/hyperweb-io/cosmos-kit/compare/docs@2.28.10...docs@2.29.0) (2025-03-25)
+
+### Features
+
+- upgrade react 19 ([a9dd023](https://github.com/hyperweb-io/cosmos-kit/commit/a9dd023dc30aa0f8ecd2a2db5e1c74c5a89b2f12))
+
 ## [2.28.10](https://github.com/hyperweb-io/cosmos-kit/compare/docs@2.28.9...docs@2.28.10) (2025-02-01)
 
 **Note:** Version bump only for package docs

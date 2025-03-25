@@ -3,117 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.7.6](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.7.5...@cosmos-kit/tailwind@1.7.6) (2025-01-28)
+# [1.8.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.7.6...@cosmos-kit/tailwind@1.8.0) (2025-03-25)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
 
+## [1.7.6](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.7.5...@cosmos-kit/tailwind@1.7.6) (2025-01-28)
 
-
-
+**Note:** Version bump only for package @cosmos-kit/tailwind
 
 ## [1.7.5](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.7.4...@cosmos-kit/tailwind@1.7.5) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
 
-
-
-
-
 ## [1.7.4](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.7.3...@cosmos-kit/tailwind@1.7.4) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
-
-
-
-
 
 ## [1.7.3](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.7.2...@cosmos-kit/tailwind@1.7.3) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
 
-
-
-
-
 ## [1.7.2](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.7.1...@cosmos-kit/tailwind@1.7.2) (2025-01-07)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
-
-
-
-
 
 ## [1.7.1](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.7.0...@cosmos-kit/tailwind@1.7.1) (2024-12-16)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
 
-
-
-
-
 # [1.7.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.6.0...@cosmos-kit/tailwind@1.7.0) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
-
-
-
-
 
 # [1.6.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.5.2...@cosmos-kit/tailwind@1.6.0) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
 
-
-
-
-
 ## [1.5.2](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.5.1...@cosmos-kit/tailwind@1.5.2) (2024-06-28)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
-
-
-
-
 
 ## [1.5.1](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.5.0...@cosmos-kit/tailwind@1.5.1) (2024-06-26)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
 
-
-
-
-
 # [1.5.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.4.0...@cosmos-kit/tailwind@1.5.0) (2024-06-18)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
-
-
-
-
 
 # [1.4.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.3.0...@cosmos-kit/tailwind@1.4.0) (2024-05-28)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
 
-
-
-
-
 # [1.3.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.2.0...@cosmos-kit/tailwind@1.3.0) (2024-05-22)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
 
-
-
-
-
 # [1.2.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.1.3...@cosmos-kit/tailwind@1.2.0) (2024-05-08)
 
 **Note:** Version bump only for package @cosmos-kit/tailwind
-
-
-
-
 
 ## [1.1.3](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/tailwind@1.1.2...@cosmos-kit/tailwind@1.1.3) (2024-05-07)
 

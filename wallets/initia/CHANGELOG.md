@@ -3,125 +3,69 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.10.7](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.10.6...@cosmos-kit/initia@0.10.7) (2025-01-28)
+# [0.11.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.10.7...@cosmos-kit/initia@0.11.0) (2025-03-25)
 
 **Note:** Version bump only for package @cosmos-kit/initia
 
+## [0.10.7](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.10.6...@cosmos-kit/initia@0.10.7) (2025-01-28)
 
-
-
+**Note:** Version bump only for package @cosmos-kit/initia
 
 ## [0.10.6](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.10.5...@cosmos-kit/initia@0.10.6) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/initia
 
-
-
-
-
 ## [0.10.5](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.10.4...@cosmos-kit/initia@0.10.5) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/initia
-
-
-
-
 
 ## [0.10.4](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.10.3...@cosmos-kit/initia@0.10.4) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/initia
 
-
-
-
-
 ## [0.10.3](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.10.2...@cosmos-kit/initia@0.10.3) (2025-01-07)
 
 **Note:** Version bump only for package @cosmos-kit/initia
-
-
-
-
 
 ## [0.10.2](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.10.1...@cosmos-kit/initia@0.10.2) (2024-12-16)
 
 **Note:** Version bump only for package @cosmos-kit/initia
 
-
-
-
-
 ## [0.10.1](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.10.0...@cosmos-kit/initia@0.10.1) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/initia
-
-
-
-
 
 # [0.10.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.9.0...@cosmos-kit/initia@0.10.0) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/initia
 
-
-
-
-
 # [0.9.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.8.2...@cosmos-kit/initia@0.9.0) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/initia
-
-
-
-
 
 ## [0.8.2](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.8.1...@cosmos-kit/initia@0.8.2) (2024-06-28)
 
 **Note:** Version bump only for package @cosmos-kit/initia
 
-
-
-
-
 ## [0.8.1](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.8.0...@cosmos-kit/initia@0.8.1) (2024-06-26)
 
 **Note:** Version bump only for package @cosmos-kit/initia
-
-
-
-
 
 # [0.8.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.7.0...@cosmos-kit/initia@0.8.0) (2024-06-18)
 
 **Note:** Version bump only for package @cosmos-kit/initia
 
-
-
-
-
 # [0.7.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.6.0...@cosmos-kit/initia@0.7.0) (2024-05-28)
 
 **Note:** Version bump only for package @cosmos-kit/initia
-
-
-
-
 
 # [0.6.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.5.0...@cosmos-kit/initia@0.6.0) (2024-05-22)
 
 **Note:** Version bump only for package @cosmos-kit/initia
 
-
-
-
-
 # [0.5.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.4.2...@cosmos-kit/initia@0.5.0) (2024-05-08)
 
 **Note:** Version bump only for package @cosmos-kit/initia
-
-
-
-
 
 ## [0.4.2](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/initia@0.4.1...@cosmos-kit/initia@0.4.2) (2024-05-07)
 

@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.31.0](https://github.com/hyperweb-io/cosmos-kit/compare/example@2.30.10...example@2.31.0) (2025-03-25)
+
+**Note:** Version bump only for package example
+
 ## [2.30.10](https://github.com/hyperweb-io/cosmos-kit/compare/example@2.30.9...example@2.30.10) (2025-02-01)
 
 **Note:** Version bump only for package example

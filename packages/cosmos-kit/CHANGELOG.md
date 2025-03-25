@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.24.0](https://github.com/hyperweb-io/cosmos-kit/compare/cosmos-kit@2.23.10...cosmos-kit@2.24.0) (2025-03-25)
+
+### Bug Fixes
+
+- correct syntax issue with galaxystation in array ([544e67e](https://github.com/hyperweb-io/cosmos-kit/commit/544e67e8e90e3e5a98fd7a471974d9885b5a8736))
+
 ## [2.23.10](https://github.com/hyperweb-io/cosmos-kit/compare/cosmos-kit@2.23.9...cosmos-kit@2.23.10) (2025-02-01)
 
 **Note:** Version bump only for package cosmos-kit
