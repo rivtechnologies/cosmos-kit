@@ -49,6 +49,6 @@
     "url": "https://github.com/hyperweb-io/cosmos-kit/issues"
   },
   "dependencies": {
-    "@cosmos-kit/bitget-extension": "1.0.0"
+    "@cosmos-kit/bitgetwallet-extension": "1.0.0"
   }
 }
