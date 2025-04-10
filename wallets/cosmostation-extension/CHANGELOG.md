@@ -3,125 +3,69 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [2.15.6](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.15.5...@cosmos-kit/cosmostation-extension@2.15.6) (2025-01-28)
+# [2.16.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.15.6...@cosmos-kit/cosmostation-extension@2.16.0) (2025-03-25)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
 
+## [2.15.6](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.15.5...@cosmos-kit/cosmostation-extension@2.15.6) (2025-01-28)
 
-
-
+**Note:** Version bump only for package @cosmos-kit/cosmostation-extension
 
 ## [2.15.5](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.15.4...@cosmos-kit/cosmostation-extension@2.15.5) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
 
-
-
-
-
 ## [2.15.4](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.15.3...@cosmos-kit/cosmostation-extension@2.15.4) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
-
-
-
-
 
 ## [2.15.3](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.15.2...@cosmos-kit/cosmostation-extension@2.15.3) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
 
-
-
-
-
 ## [2.15.2](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.15.1...@cosmos-kit/cosmostation-extension@2.15.2) (2025-01-07)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
-
-
-
-
 
 ## [2.15.1](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.15.0...@cosmos-kit/cosmostation-extension@2.15.1) (2024-12-16)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
 
-
-
-
-
 # [2.15.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.14.0...@cosmos-kit/cosmostation-extension@2.15.0) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
-
-
-
-
 
 # [2.14.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.13.0...@cosmos-kit/cosmostation-extension@2.14.0) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
 
-
-
-
-
 # [2.13.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.12.2...@cosmos-kit/cosmostation-extension@2.13.0) (2024-08-01)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
-
-
-
-
 
 ## [2.12.2](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.12.1...@cosmos-kit/cosmostation-extension@2.12.2) (2024-06-28)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
 
-
-
-
-
 ## [2.12.1](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.12.0...@cosmos-kit/cosmostation-extension@2.12.1) (2024-06-26)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
-
-
-
-
 
 # [2.12.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.11.0...@cosmos-kit/cosmostation-extension@2.12.0) (2024-06-18)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
 
-
-
-
-
 # [2.11.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.10.0...@cosmos-kit/cosmostation-extension@2.11.0) (2024-05-28)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
-
-
-
-
 
 # [2.10.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.9.0...@cosmos-kit/cosmostation-extension@2.10.0) (2024-05-22)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
 
-
-
-
-
 # [2.9.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.8.3...@cosmos-kit/cosmostation-extension@2.9.0) (2024-05-08)
 
 **Note:** Version bump only for package @cosmos-kit/cosmostation-extension
-
-
-
-
 
 ## [2.8.3](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmostation-extension@2.8.2...@cosmos-kit/cosmostation-extension@2.8.3) (2024-05-07)
 

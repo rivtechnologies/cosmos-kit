@@ -3,133 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.14.7](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.14.6...@cosmos-kit/leap-metamask-cosmos-snap@0.14.7) (2025-01-28)
+# [0.15.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.14.7...@cosmos-kit/leap-metamask-cosmos-snap@0.15.0) (2025-03-25)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
 
+## [0.14.7](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.14.6...@cosmos-kit/leap-metamask-cosmos-snap@0.14.7) (2025-01-28)
 
-
-
+**Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
 
 ## [0.14.6](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.14.5...@cosmos-kit/leap-metamask-cosmos-snap@0.14.6) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
 
-
-
-
-
 ## [0.14.5](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.14.4...@cosmos-kit/leap-metamask-cosmos-snap@0.14.5) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
-
-
-
-
 
 ## [0.14.4](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.14.3...@cosmos-kit/leap-metamask-cosmos-snap@0.14.4) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
 
-
-
-
-
 ## [0.14.3](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.14.2...@cosmos-kit/leap-metamask-cosmos-snap@0.14.3) (2025-01-07)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
-
-
-
-
 
 ## [0.14.2](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.14.1...@cosmos-kit/leap-metamask-cosmos-snap@0.14.2) (2024-12-16)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
 
-
-
-
-
 ## [0.14.1](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.14.0...@cosmos-kit/leap-metamask-cosmos-snap@0.14.1) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
-
-
-
-
 
 # [0.14.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.13.0...@cosmos-kit/leap-metamask-cosmos-snap@0.14.0) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
 
-
-
-
-
 # [0.13.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.12.2...@cosmos-kit/leap-metamask-cosmos-snap@0.13.0) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
-
-
-
-
 
 ## [0.12.2](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.12.1...@cosmos-kit/leap-metamask-cosmos-snap@0.12.2) (2024-06-28)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
 
-
-
-
-
 ## [0.12.1](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.12.0...@cosmos-kit/leap-metamask-cosmos-snap@0.12.1) (2024-06-26)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
-
-
-
-
 
 # [0.12.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.11.0...@cosmos-kit/leap-metamask-cosmos-snap@0.12.0) (2024-06-18)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
 
-
-
-
-
 # [0.11.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.10.0...@cosmos-kit/leap-metamask-cosmos-snap@0.11.0) (2024-05-28)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
-
-
-
-
 
 # [0.10.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.9.0...@cosmos-kit/leap-metamask-cosmos-snap@0.10.0) (2024-05-23)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
 
-
-
-
-
 # [0.9.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.8.0...@cosmos-kit/leap-metamask-cosmos-snap@0.9.0) (2024-05-22)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
 
-
-
-
-
 # [0.8.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.7.3...@cosmos-kit/leap-metamask-cosmos-snap@0.8.0) (2024-05-08)
 
 **Note:** Version bump only for package @cosmos-kit/leap-metamask-cosmos-snap
-
-
-
-
 
 ## [0.7.3](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/leap-metamask-cosmos-snap@0.7.2...@cosmos-kit/leap-metamask-cosmos-snap@0.7.3) (2024-05-07)
 
