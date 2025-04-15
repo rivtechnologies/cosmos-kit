@@ -1,20 +1,17 @@
 import { sha256 } from '@cosmjs/crypto';
 import { toUtf8 } from '@cosmjs/encoding';
 import eccrypto, { Ecies } from '@toruslabs/eccrypto';
+import { AuthAdapter, AuthLoginParams } from '@web3auth/auth-adapter';
 import {
   ADAPTER_STATUS,
   CHAIN_NAMESPACES,
   CustomChainConfig,
   SafeEventEmitterProvider,
+  UX_MODE,
   WALLET_ADAPTERS,
 } from '@web3auth/base';
 import { CommonPrivateKeyProvider } from '@web3auth/base-provider';
 import { Web3AuthNoModal } from '@web3auth/no-modal';
-import {
-  OpenloginAdapter,
-  OpenloginLoginParams,
-  UX_MODE,
-} from '@web3auth/openlogin-adapter';
 
 import {
   FromWorkerMessage,
@@ -58,7 +55,6 @@ export const listenOnce = (
       removeEventListener?.call(worker, 'message', listener as any);
     }
   };
-
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   addEventListener?.call(worker, 'message', listener as any);
 };
@@ -118,12 +114,7 @@ export const hashObject = (object: any) => {
 export const connectClientAndProvider = async (
   isMobile: boolean,
   options: Web3AuthClientOptions,
-  {
-    // If no login provider already connected (cached), don't attempt to login
-    // by showing the popup auth flow. This is useful for connecting just to
-    // logout of the session, not prompting to login if already logged out.
-    dontAttemptLogin = false,
-  } = {}
+  { dontAttemptLogin = false } = {}
 ): Promise<{
   client: Web3AuthNoModal;
   provider: SafeEventEmitterProvider | null;
@@ -132,15 +123,21 @@ export const connectClientAndProvider = async (
     chainId: 'other',
     rpcTarget: 'other',
     displayName: 'other',
-    blockExplorer: 'other',
+    blockExplorerUrl: 'other',
     ticker: 'other',
     tickerName: 'other',
     ...options.client.chainConfig,
     chainNamespace: CHAIN_NAMESPACES.OTHER,
   };
+  const privateKeyProvider = new CommonPrivateKeyProvider({
+    config: {
+      chainConfig,
+    },
+  });
   const client = new Web3AuthNoModal({
     ...options.client,
     chainConfig,
+    privateKeyProvider,
   });
 
   // Popups are blocked by default on mobile browsers, so use redirect. Popup is
@@ -160,27 +157,27 @@ export const connectClientAndProvider = async (
     );
   }
 
-  const privateKeyProvider = new CommonPrivateKeyProvider({
-    config: {
-      chainConfig,
-    },
-  });
-  const openloginAdapter = new OpenloginAdapter({
-    privateKeyProvider,
+  const mfaLevel = options.mfaLevel ?? 'default';
+  const authAdapter = new AuthAdapter({
     adapterSettings: {
       uxMode,
     },
+    loginSettings: {
+      mfaLevel,
+    },
   });
-  client.configureAdapter(openloginAdapter);
+  client.configureAdapter(authAdapter);
 
   await client.init();
 
   let provider = client.connected ? client.provider : null;
   if (!client.connected && !dontAttemptLogin) {
     try {
-      provider = await client.connectTo(WALLET_ADAPTERS.OPENLOGIN, {
+      const loginHint = options.getLoginHint?.();
+      provider = await client.connectTo(WALLET_ADAPTERS.AUTH, {
         loginProvider: options.loginProvider,
-      } as OpenloginLoginParams);
+        login_hint: loginHint,
+      } as AuthLoginParams);
     } catch (err) {
       // Unnecessary error thrown during redirect, so log and ignore it.
       if (
@@ -211,8 +208,5 @@ export const connectClientAndProvider = async (
     }
   }
 
-  return {
-    client,
-    provider,
-  };
+  return { client, provider };
 };

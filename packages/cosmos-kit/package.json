@@ -1,8 +1,8 @@
 {
   "name": "cosmos-kit",
-  "version": "2.21.1",
+  "version": "2.24.0",
   "description": "cosmos-kit wallet connector",
-  "author": "developers@cosmology.zone",
+  "author": "developers@hyperweb.io",
   "contributors": [
     {
       "name": "Jun Liu"
@@ -23,7 +23,7 @@
       "name": "Delivan Jeonghyeok Yoo"
     }
   ],
-  "homepage": "https://github.com/cosmology-tech/cosmos-kit#readme",
+  "homepage": "https://github.com/hyperweb-io/cosmos-kit#readme",
   "license": "SEE LICENSE IN LICENSE",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -57,7 +57,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmology-tech/cosmos-kit"
+    "url": "https://github.com/hyperweb-io/cosmos-kit"
   },
   "keywords": [
     "cosmos-kit",
@@ -68,29 +68,27 @@
     "wallet"
   ],
   "bugs": {
-    "url": "https://github.com/cosmology-tech/cosmos-kit/issues"
+    "url": "https://github.com/hyperweb-io/cosmos-kit/issues"
   },
   "dependencies": {
-    "@cosmos-kit/cdcwallet": "^2.15.1",
-    "@cosmos-kit/coin98": "^2.13.1",
-    "@cosmos-kit/compass": "^2.13.1",
-    "@cosmos-kit/cosmostation": "^2.14.0",
-    "@cosmos-kit/exodus": "^2.12.0",
-    "@cosmos-kit/fin": "^2.13.1",
-    "@cosmos-kit/frontier": "^2.12.0",
+    "@cosmos-kit/bitgetwallet-extension": "^1.1.0",
+    "@cosmos-kit/cdcwallet": "^2.16.0",
+    "@cosmos-kit/coin98": "^2.14.0",
+    "@cosmos-kit/compass": "^2.14.0",
+    "@cosmos-kit/cosmostation": "^2.15.0",
+    "@cosmos-kit/ctrl": "^2.14.0",
+    "@cosmos-kit/exodus": "^2.13.0",
+    "@cosmos-kit/fin": "^2.14.0",
     "@cosmos-kit/foxwallet": "^1.0.0",
-    "@cosmos-kit/galaxy-station": "^2.12.0",
-    "@cosmos-kit/keplr": "^2.14.1",
-    "@cosmos-kit/leap": "^2.14.1",
-    "@cosmos-kit/ledger": "^2.13.0",
-    "@cosmos-kit/okxwallet-extension": "^2.13.0",
-    "@cosmos-kit/omni": "^2.12.0",
-    "@cosmos-kit/owallet": "^2.13.1",
-    "@cosmos-kit/shell": "^2.13.1",
-    "@cosmos-kit/station": "^2.12.0",
-    "@cosmos-kit/tailwind": "^1.7.0",
-    "@cosmos-kit/trust": "^2.13.0",
-    "@cosmos-kit/vectis": "^2.13.1",
-    "@cosmos-kit/xdefi": "^2.12.0"
+    "@cosmos-kit/galaxy-station": "^2.14.0",
+    "@cosmos-kit/keplr": "^2.15.0",
+    "@cosmos-kit/leap": "^2.15.0",
+    "@cosmos-kit/ledger": "^2.14.0",
+    "@cosmos-kit/okxwallet-extension": "^2.14.0",
+    "@cosmos-kit/omni": "^2.13.0",
+    "@cosmos-kit/owallet": "^2.15.0",
+    "@cosmos-kit/shell": "^2.14.0",
+    "@cosmos-kit/tailwind": "^1.8.0",
+    "@cosmos-kit/trust": "^2.14.0"
   }
 }

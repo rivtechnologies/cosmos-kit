@@ -1,8 +1,8 @@
 {
   "name": "@cosmos-kit/ledger",
-  "version": "2.13.0",
+  "version": "2.14.0",
   "description": "cosmos-kit wallet connector",
-  "author": "developers@cosmology.zone",
+  "author": "developers@hyperweb.io",
   "contributors": [
     {
       "name": "Tom Wang"
@@ -14,7 +14,7 @@
       "name": "Dan Lynch"
     }
   ],
-  "homepage": "https://github.com/cosmology-tech/cosmos-kit#readme",
+  "homepage": "https://github.com/hyperweb-io/cosmos-kit#readme",
   "license": "SEE LICENSE IN LICENSE",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -48,7 +48,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmology-tech/cosmos-kit"
+    "url": "https://github.com/hyperweb-io/cosmos-kit"
   },
   "keywords": [
     "cosmos",
@@ -57,7 +57,7 @@
     "wallet"
   ],
   "bugs": {
-    "url": "https://github.com/cosmology-tech/cosmos-kit/issues"
+    "url": "https://github.com/hyperweb-io/cosmos-kit/issues"
   },
   "jest": {
     "testPathIgnorePatterns": [
@@ -65,13 +65,15 @@
     ]
   },
   "dependencies": {
-    "@cosmos-kit/core": "^2.15.0",
-    "@ledgerhq/hw-app-cosmos": "^6.28.1",
-    "@ledgerhq/hw-transport-webhid": "^6.27.15",
-    "@ledgerhq/hw-transport-webusb": "^6.27.15"
+    "@cosmos-kit/core": "^2.16.0",
+    "@ledgerhq/hw-app-cosmos": "^6.30.4",
+    "@ledgerhq/hw-transport-webhid": "^6.30.0",
+    "@ledgerhq/hw-transport-webusb": "^6.29.4"
   },
   "peerDependencies": {
-    "@cosmjs/amino": ">=0.32.3",
-    "@cosmjs/proto-signing": ">=0.32.3"
+    "@cosmjs/amino": ">=0.32.4",
+    "@cosmjs/crypto": ">=0.32.4",
+    "@cosmjs/encoding": ">=0.32.4",
+    "@cosmjs/proto-signing": ">=0.32.4"
   }
 }

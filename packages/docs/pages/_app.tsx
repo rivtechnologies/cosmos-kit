@@ -57,12 +57,11 @@ function MyApp({ Component, pageProps }: AppProps) {
             "vectis",
             "frontier",
             "leap",
-            "xdefi",
+            "ctrl",
             "coin98",
             "fin",
             "tailwind",
             "owallet",
-            "galaxystation",
             "cdcwallet",
             "foxwallet"
           ),
@@ -77,7 +76,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               description: "CosmosKit Docs",
               url: "https://docs.cosmoskit.com/",
               icons: [
-                "https://raw.githubusercontent.com/cosmology-tech/cosmos-kit/main/packages/docs/public/favicon-96x96.png",
+                "https://raw.githubusercontent.com/hyperweb-io/cosmos-kit/main/packages/docs/public/favicon-96x96.png",
               ],
             },
           },

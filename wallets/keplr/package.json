@@ -1,8 +1,8 @@
 {
   "name": "@cosmos-kit/keplr",
-  "version": "2.14.1",
+  "version": "2.15.0",
   "description": "cosmos-kit wallet connector",
-  "author": "developers@cosmology.zone",
+  "author": "developers@hyperweb.io",
   "contributors": [
     {
       "name": "Jun Liu"
@@ -20,7 +20,7 @@
       "name": "Delivan Jeonghyeok Yoo"
     }
   ],
-  "homepage": "https://github.com/cosmology-tech/cosmos-kit#readme",
+  "homepage": "https://github.com/hyperweb-io/cosmos-kit#readme",
   "license": "SEE LICENSE IN LICENSE",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -53,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmology-tech/cosmos-kit"
+    "url": "https://github.com/hyperweb-io/cosmos-kit"
   },
   "keywords": [
     "cosmos",
@@ -62,10 +62,10 @@
     "wallet"
   ],
   "bugs": {
-    "url": "https://github.com/cosmology-tech/cosmos-kit/issues"
+    "url": "https://github.com/hyperweb-io/cosmos-kit/issues"
   },
   "dependencies": {
-    "@cosmos-kit/keplr-extension": "^2.14.0",
-    "@cosmos-kit/keplr-mobile": "^2.14.1"
+    "@cosmos-kit/keplr-extension": "^2.15.0",
+    "@cosmos-kit/keplr-mobile": "^2.15.0"
   }
 }

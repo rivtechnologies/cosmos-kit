@@ -2,11 +2,12 @@ import { AminoSignResponse, StdSignDoc } from '@cosmjs/amino';
 import { AccountData, DirectSignResponse } from '@cosmjs/proto-signing';
 import { Wallet } from '@cosmos-kit/core';
 import { Ecies } from '@toruslabs/eccrypto';
-import { Web3AuthNoModalOptions } from '@web3auth/no-modal';
 import {
   LOGIN_PROVIDER_TYPE,
-  OPENLOGIN_NETWORK_TYPE,
-} from '@web3auth/openlogin-adapter';
+  MfaLevelType,
+  WEB3AUTH_NETWORK_TYPE,
+} from '@web3auth/auth-adapter';
+import { Web3AuthNoModalOptions } from '@web3auth/base';
 import { SignDoc } from 'cosmjs-types/cosmos/tx/v1beta1/tx';
 
 export type Web3AuthWalletInfo = Wallet & { options: Web3AuthClientOptions };
@@ -19,11 +20,13 @@ export type Web3AuthLoginMethod = {
 
 export type Web3AuthClientOptions = {
   loginProvider: LOGIN_PROVIDER_TYPE;
+  mfaLevel?: MfaLevelType;
+  getLoginHint?: () => string | undefined;
 
   // Web3Auth client options.
   client: {
     clientId: string;
-    web3AuthNetwork: OPENLOGIN_NETWORK_TYPE;
+    web3AuthNetwork: WEB3AUTH_NETWORK_TYPE;
   } & Omit<Web3AuthNoModalOptions, 'chainConfig'> & {
       chainConfig?: Omit<
         Web3AuthNoModalOptions['chainConfig'],

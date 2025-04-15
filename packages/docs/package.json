@@ -1,6 +1,6 @@
 {
   "name": "docs",
-  "version": "2.25.2",
+  "version": "2.30.0",
   "private": true,
   "main": "index.js",
   "license": "MIT",
@@ -19,30 +19,27 @@
     "deploy:all": "npm run export && npm run deploy && ./seo/prepare.sh"
   },
   "dependencies": {
-    "@cosmos-kit/core": "^2.15.0",
-    "@cosmos-kit/react": "^2.20.1",
-    "@interchain-ui/react": "^1.23.13",
+    "@cosmos-kit/core": "^2.16.0",
+    "@cosmos-kit/react": "^2.22.0",
+    "@interchain-ui/react": "^1.26.3",
     "chain-registry": "^1.64.13",
-    "cosmos-kit": "^2.21.1",
+    "cosmos-kit": "^2.24.0",
     "fast-fuzzy": "^1.12.0",
     "flexsearch": "^0.7.43",
     "framer-motion": "^9.0.7",
     "next": "^13",
     "nextra": "^2.9.0",
     "nextra-theme-docs": "^2.9.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-icons": "4.4.0"
-  },
-  "resolutions": {
-    "@types/react": "^18"
   },
   "devDependencies": {
     "@babel/preset-env": "7.22.7",
     "@babel/preset-react": "7.22.5",
     "@babel/preset-typescript": "7.22.5",
-    "@types/react": "18.2",
-    "@types/react-dom": "18.2",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
     "babel-loader": "9.1.2",
     "babel-plugin-inline-import-data-uri": "1.0.1",
     "postcss": "8.4.24",

@@ -13,11 +13,12 @@ import {
   WalletModalProps,
 } from '@cosmos-kit/core';
 import { ChainProvider as ChainProviderLite } from '@cosmos-kit/react-lite';
-import { ReactNode, useCallback, useMemo } from 'react';
+import { Origin } from '@dao-dao/cosmiframe';
+import { ReactElement, ReactNode, useCallback, useMemo } from 'react';
 
+import { SelectedWalletRepoProvider } from './context';
 import { ThemeCustomizationProps, WalletModal } from './modal';
 import { defaultModalViews } from './modal/components/views';
-import { SelectedWalletRepoProvider } from './context';
 
 export const ChainProvider = ({
   chains,
@@ -25,7 +26,7 @@ export const ChainProvider = ({
   wallets,
   walletModal,
   modalViews,
-  throwErrors = false,
+  throwErrors: propThrowErrors,
   subscribeConnectEvents = true,
   defaultNameService = 'icns',
   walletConnectOptions,
@@ -33,16 +34,7 @@ export const ChainProvider = ({
   endpointOptions,
   sessionOptions,
   logLevel = 'WARN',
-  allowedIframeParentOrigins = [
-    'http://localhost:*',
-    'https://localhost:*',
-    'https://app.osmosis.zone',
-    'https://daodao.zone',
-    'https://dao.daodao.zone',
-    'https://my.abstract.money',
-    'https://apps.abstract.money',
-    'https://console.abstract.money'
-  ],
+  allowedIframeParentOrigins,
   children,
   modalTheme = {},
   modalOptions,
@@ -50,9 +42,9 @@ export const ChainProvider = ({
   chains: (Chain | ChainName)[];
   assetLists?: AssetList[];
   wallets: MainWalletBase[];
-  walletModal?: (props: WalletModalProps) => JSX.Element;
+  walletModal?: (props: WalletModalProps) => ReactElement;
   modalViews?: typeof defaultModalViews;
-  throwErrors?: boolean | 'connect_only';
+  throwErrors: boolean | 'connect_only';
   subscribeConnectEvents?: boolean;
   defaultNameService?: NameServiceName;
   walletConnectOptions?: WalletConnectOptions; // SignClientOptions is required if using wallet connect v2
@@ -64,38 +56,43 @@ export const ChainProvider = ({
    * Origins to allow wrapping this app in an iframe and connecting to this
    * Cosmos Kit instance.
    *
-   * Defaults to Osmosis and DAO DAO.
+   * Defaults to Osmosis, DAO DAO, and Abstract.
    */
-  allowedIframeParentOrigins?: string[];
+  allowedIframeParentOrigins?: Origin[];
   children: ReactNode;
   modalTheme?: ThemeCustomizationProps;
   modalOptions?: ModalOptions;
 }) => {
   const logger = useMemo(() => new Logger(logLevel), []);
 
+  const throwErrors =
+    propThrowErrors === 'connect_only' ? false : Boolean(propThrowErrors);
+
   const withChainProvider = (
-    modal: (props: WalletModalProps) => JSX.Element
-  ) => (
-    <SelectedWalletRepoProvider>
-      <ChainProviderLite
-        chains={chains}
-        assetLists={assetLists}
-        wallets={wallets}
-        walletModal={modal}
-        throwErrors={throwErrors}
-        subscribeConnectEvents={subscribeConnectEvents}
-        defaultNameService={defaultNameService}
-        walletConnectOptions={walletConnectOptions}
-        signerOptions={signerOptions}
-        endpointOptions={endpointOptions}
-        sessionOptions={sessionOptions}
-        logLevel={logLevel}
-        allowedIframeParentOrigins={allowedIframeParentOrigins}
-      >
-        {children}
-      </ChainProviderLite>
-    </SelectedWalletRepoProvider>
-  );
+    modal: (props: WalletModalProps) => ReactElement
+  ) => {
+    return (
+      <SelectedWalletRepoProvider>
+        <ChainProviderLite
+          chains={chains}
+          assetLists={assetLists}
+          wallets={wallets}
+          walletModal={modal}
+          throwErrors={throwErrors}
+          subscribeConnectEvents={subscribeConnectEvents}
+          defaultNameService={defaultNameService}
+          walletConnectOptions={walletConnectOptions}
+          signerOptions={signerOptions}
+          endpointOptions={endpointOptions}
+          sessionOptions={sessionOptions}
+          logLevel={logLevel}
+          allowedIframeParentOrigins={allowedIframeParentOrigins}
+        >
+          {children}
+        </ChainProviderLite>
+      </SelectedWalletRepoProvider>
+    );
+  };
 
   if (walletModal) {
     logger.debug('Using provided wallet modal.');
@@ -103,6 +100,7 @@ export const ChainProvider = ({
   }
 
   logger.debug('Using default wallet modal.');
+  console.log('Using locally built cosmos kit');
 
   const defaultModal = useCallback(
     (props: WalletModalProps) => (
@@ -116,7 +114,7 @@ export const ChainProvider = ({
         modalOptions={modalOptions}
       />
     ),
-    [defaultModalViews]
+    [defaultModalViews, modalTheme, modalViews, modalOptions]
   );
   return withChainProvider(defaultModal);
 };

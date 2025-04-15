@@ -1,9 +1,9 @@
 {
   "name": "@cosmos-kit/tailwind-extension",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Cosmos-kit adapter for Tailwind extension",
   "author": "bao@tailwind.zone",
-  "homepage": "https://github.com/cosmology-tech/cosmos-kit#readme",
+  "homepage": "https://github.com/hyperweb-io/cosmos-kit#readme",
   "license": "SEE LICENSE IN LICENSE",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmology-tech/cosmos-kit"
+    "url": "https://github.com/hyperweb-io/cosmos-kit"
   },
   "keywords": [
     "cosmos",
@@ -46,7 +46,7 @@
     "wallet"
   ],
   "bugs": {
-    "url": "https://github.com/cosmology-tech/cosmos-kit/issues"
+    "url": "https://github.com/hyperweb-io/cosmos-kit/issues"
   },
   "jest": {
     "testPathIgnorePatterns": [
@@ -54,7 +54,7 @@
     ]
   },
   "dependencies": {
-    "@cosmos-kit/core": "^2.15.0"
+    "@cosmos-kit/core": "^2.16.0"
   },
   "devDependencies": {
     "@cosmjs/proto-signing": "^0.32.3",

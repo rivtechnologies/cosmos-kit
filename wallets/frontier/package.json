@@ -1,6 +1,6 @@
 {
   "name": "@cosmos-kit/frontier",
-  "version": "2.12.0",
+  "version": "2.13.0",
   "description": "cosmos-kit wallet connector",
   "author": "mayank.yadav@frontierwallet.io",
   "contributors": [
@@ -8,7 +8,7 @@
       "name": "Mayank Yadav"
     }
   ],
-  "homepage": "https://github.com/cosmology-tech/cosmos-kit#readme",
+  "homepage": "https://github.com/hyperweb-io/cosmos-kit#readme",
   "license": "SEE LICENSE IN LICENSE",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmology-tech/cosmos-kit"
+    "url": "https://github.com/hyperweb-io/cosmos-kit"
   },
   "keywords": [
     "cosmos-kit",
@@ -50,9 +50,9 @@
     "wallet"
   ],
   "bugs": {
-    "url": "https://github.com/cosmology-tech/cosmos-kit/issues"
+    "url": "https://github.com/hyperweb-io/cosmos-kit/issues"
   },
   "dependencies": {
-    "@cosmos-kit/frontier-extension": "^2.12.0"
+    "@cosmos-kit/frontier-extension": "^2.13.0"
   }
 }

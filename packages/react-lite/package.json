@@ -1,8 +1,8 @@
 {
   "name": "@cosmos-kit/react-lite",
-  "version": "2.15.1",
+  "version": "2.16.0",
   "description": "cosmos-kit wallet connector",
-  "author": "developers@cosmology.zone",
+  "author": "developers@hyperweb.io",
   "contributors": [
     {
       "name": "Jun Liu"
@@ -20,7 +20,7 @@
       "name": "Delivan Jeonghyeok Yoo"
     }
   ],
-  "homepage": "https://github.com/cosmology-tech/cosmos-kit#readme",
+  "homepage": "https://github.com/hyperweb-io/cosmos-kit#readme",
   "license": "SEE LICENSE IN LICENSE",
   "source": "./src/index.ts",
   "main": "cjs/index.js",
@@ -56,7 +56,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmology-tech/cosmos-kit"
+    "url": "https://github.com/hyperweb-io/cosmos-kit"
   },
   "keywords": [
     "cosmos",
@@ -67,28 +67,26 @@
     "wallet"
   ],
   "bugs": {
-    "url": "https://github.com/cosmology-tech/cosmos-kit/issues"
+    "url": "https://github.com/hyperweb-io/cosmos-kit/issues"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "5.14.1",
-    "@testing-library/react": "^15.0.7",
-    "@testing-library/react-hooks": "8.0.1",
-    "@types/react": "^18.2",
-    "@types/react-dom": "^18.2",
-    "jest-environment-jsdom": "29.7.0"
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "jest-environment-jsdom": "^29.7.0"
   },
   "dependencies": {
     "@chain-registry/types": "^0.46.11",
-    "@cosmos-kit/core": "^2.15.0",
-    "@dao-dao/cosmiframe": "^0.1.0"
-  },
-  "resolutions": {
-    "@types/react": "^18.2"
+    "@cosmos-kit/core": "^2.16.0",
+    "@dao-dao/cosmiframe": "^1.0.0-rc.1"
   },
   "peerDependencies": {
-    "@types/react": ">= 17",
-    "@types/react-dom": ">= 17",
-    "react": "^18",
-    "react-dom": "^18"
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   }
 }
