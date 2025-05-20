@@ -13,7 +13,7 @@ There are four important classes.
 
 Before all, we need to clarify that there are two types of entities in CosmosKit as a wallet adapter: **Chain** and **Wallet**. Chain is identified by chain name i.e. `cosmoshub`, `osmosis` etc. And wallet is identified by wallet name i.e. `keplr-extension`, `keplr-mobile`, `cosmostation-extension` etc.
 
-> Note that we're taking a single wallet application as a wallet in CosmosKit rather than the wallet product name. Taking `Keplr` as an example, we diffientiate `extension` and `mobile` in our code because they are connected via totally different codes. So for product `Keplr`, we have two wallets `keplr-extension` and `keplr-mobile` in CosmosKit.
+> Note that we're taking a single wallet application as a wallet in CosmosKit rather than the wallet product name. Taking `Keplr` as an example, we differentiate `extension` and `mobile` in our code because they are connected via totally different codes. So for product `Keplr`, we have two wallets `keplr-extension` and `keplr-mobile` in CosmosKit.
 
 ### WalletManager
 
