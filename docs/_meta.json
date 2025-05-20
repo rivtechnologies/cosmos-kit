@@ -6,8 +6,5 @@
   "hooks": "Hooks",
   "cookbook": "Cookbook",
   "integrating-wallets": "Integrating Wallets",
-  "advanced": "Advanced",
-  "---": {
-    "type": "separator"
-  }
+  "advanced": "Advanced"
 }
