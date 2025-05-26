@@ -23,6 +23,7 @@ import { wallets as ctrlExtension } from '@cosmos-kit/ctrl-extension';
 import { wallets as exodusExtension } from '@cosmos-kit/exodus-extension';
 import { wallets as tailwindWallet } from '@cosmos-kit/tailwind';
 import { wallets as cdcwalletExtension } from '@cosmos-kit/cdcwallet-extension';
+import { wallets as bitgetwalletExtension } from '@cosmos-kit/bitgetwallet-extension';
 
 export type WalletName =
   | 'keplr'
@@ -41,21 +42,22 @@ export type WalletName =
   | 'owallet'
   | 'exodus'
   | 'galaxystation'
-  | 'cdcwallet';
+  | 'cdcwallet'
+  | 'bitgetwallet';
 
 export type WalletList<
   E extends MainWalletBase | null,
   M extends MainWalletBase | null
 > = (E extends MainWalletBase
   ? M extends MainWalletBase
-  ? [E, M]
-  : [E]
+    ? [E, M]
+    : [E]
   : M extends MainWalletBase
   ? [M]
   : []) & {
-    mobile: M | null;
-    extension: E | null;
-  };
+  mobile: M | null;
+  extension: E | null;
+};
 
 export function createWalletList<
   ExtensionWallet extends MainWalletBase | null,
@@ -101,6 +103,7 @@ export const exodus = createWalletList(exodusExtension[0], null);
 export const tailwind = createWalletList(tailwindWallet[0], null);
 export const owallet = createWalletList(owalletExtension[0], owalletMobile[0]);
 export const cdcwallet = createWalletList(cdcwalletExtension[0], null);
+export const bitgetwallet = createWalletList(bitgetwalletExtension[0], null);
 
 export type SubWalletList = MainWalletBase[] & {
   get mobile(): MainWalletBase[];
@@ -124,6 +127,7 @@ export type AllWalletList = SubWalletList & {
   owallet: typeof owallet;
   cdcwallet: typeof cdcwallet;
   galaxystation: typeof galaxystation;
+  bitgetwallet: typeof bitgetwallet;
   for: (...names: WalletName[]) => SubWalletList;
   not: (...names: WalletName[]) => SubWalletList;
 };
@@ -164,6 +168,7 @@ export function createAllWalletList(ws: MainWalletBase[]) {
   wallets.owallet = owallet;
   wallets.cdcwallet = cdcwallet;
   wallets.galaxystation = galaxystation;
+  wallets.bitgetwallet = bitgetwallet;
 
   defineGetters(wallets);
 
@@ -212,4 +217,5 @@ export const wallets = createAllWalletList([
   ...owallet,
   ...cdcwallet,
   ...galaxystation,
+  ...bitgetwallet,
 ]);

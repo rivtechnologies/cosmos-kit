@@ -27,7 +27,7 @@ Three important properties/arguments in `ChainProvider`/`WalletManager` are `cha
 
 > For practice you can take a look at [How to Integrate New Wallets into CosmosKit](/integrating-wallets/adding-new-wallets)
 
-`MainWalletBase` is only about wallet and it's not about any specifical chain. And it's responsible for initializing wallet client and managing all chain wallets. Here brings in the third class `ChainWalletBase`.
+`MainWalletBase` is only about wallet and it's not about any specific chain. And it's responsible for initializing wallet client and managing all chain wallets. Here brings in the third class `ChainWalletBase`.
 
 > So far `MainWalletBase` is dealing with four different broadcast/synchronization events for chain wallets.
 >
@@ -79,4 +79,4 @@ We have a class `MainWalletBase` with wallet specified to manage all chain walle
   
 In essence, these two classes offer different ways of organizing and accessing chain wallets, based on what the primary point of interest is (wallet name or chain name).
 
-So far `WalletRepo` is only used in [`WalletModal`](https://docs.hyperweb.io/cosmos-kit/provider/chain-provider#walletmodal) properties.
+So far `WalletRepo` is only used in [`WalletModal`](https://docs.cosmology.zone/cosmos-kit/provider/chain-provider#walletmodal) properties.
