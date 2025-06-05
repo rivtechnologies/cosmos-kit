@@ -3,141 +3,77 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.12.7](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.12.6...@cosmos-kit/cosmos-extension-metamask@0.12.7) (2025-01-28)
+# [0.13.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.12.7...@cosmos-kit/cosmos-extension-metamask@0.13.0) (2025-03-25)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
 
+## [0.12.7](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.12.6...@cosmos-kit/cosmos-extension-metamask@0.12.7) (2025-01-28)
 
-
-
+**Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
 
 ## [0.12.6](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.12.5...@cosmos-kit/cosmos-extension-metamask@0.12.6) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
 
-
-
-
-
 ## [0.12.5](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.12.4...@cosmos-kit/cosmos-extension-metamask@0.12.5) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
-
-
-
-
 
 ## [0.12.4](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.12.3...@cosmos-kit/cosmos-extension-metamask@0.12.4) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
 
-
-
-
-
 ## [0.12.3](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.12.2...@cosmos-kit/cosmos-extension-metamask@0.12.3) (2025-01-07)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
-
-
-
-
 
 ## [0.12.2](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.12.1...@cosmos-kit/cosmos-extension-metamask@0.12.2) (2024-12-16)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
 
-
-
-
-
 ## [0.12.1](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.12.0...@cosmos-kit/cosmos-extension-metamask@0.12.1) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
-
-
-
-
 
 # [0.12.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.11.0...@cosmos-kit/cosmos-extension-metamask@0.12.0) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
 
-
-
-
-
 # [0.11.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.10.0...@cosmos-kit/cosmos-extension-metamask@0.11.0) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
-
-
-
-
 
 # [0.10.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.9.3...@cosmos-kit/cosmos-extension-metamask@0.10.0) (2024-08-01)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
 
-
-
-
-
 ## [0.9.3](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.9.2...@cosmos-kit/cosmos-extension-metamask@0.9.3) (2024-06-28)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
-
-
-
-
 
 ## [0.9.2](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.9.1...@cosmos-kit/cosmos-extension-metamask@0.9.2) (2024-06-28)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
 
-
-
-
-
 ## [0.9.1](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.9.0...@cosmos-kit/cosmos-extension-metamask@0.9.1) (2024-06-26)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
-
-
-
-
 
 # [0.9.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.8.0...@cosmos-kit/cosmos-extension-metamask@0.9.0) (2024-06-18)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
 
-
-
-
-
 # [0.8.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.7.0...@cosmos-kit/cosmos-extension-metamask@0.8.0) (2024-05-28)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
-
-
-
-
 
 # [0.7.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.6.0...@cosmos-kit/cosmos-extension-metamask@0.7.0) (2024-05-22)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
 
-
-
-
-
 # [0.6.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.5.3...@cosmos-kit/cosmos-extension-metamask@0.6.0) (2024-05-08)
 
 **Note:** Version bump only for package @cosmos-kit/cosmos-extension-metamask
-
-
-
-
 
 ## [0.5.3](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/cosmos-extension-metamask@0.5.2...@cosmos-kit/cosmos-extension-metamask@0.5.3) (2024-05-07)
 

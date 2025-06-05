@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.16.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/web3auth@2.15.0...@cosmos-kit/web3auth@2.16.0) (2025-03-25)
+
+**Note:** Version bump only for package @cosmos-kit/web3auth
+
 # [2.15.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/web3auth@2.14.8...@cosmos-kit/web3auth@2.15.0) (2025-02-01)
 
 ### Features

@@ -11,6 +11,7 @@ import {
   OfflineSigner,
 } from '@cosmjs/proto-signing';
 import { SignClientTypes } from '@walletconnect/types';
+import { type ReactElement } from 'react';
 
 import { ChainWalletBase, MainWalletBase } from '../bases';
 import { ChainName, ChainRecord } from './chain';
@@ -45,7 +46,7 @@ export enum WalletStatus {
 }
 
 export interface DownloadInfo extends DappEnv {
-  icon?: string | ((props: any) => JSX.Element); // i.e. { IconType } from 'react-icons';
+  icon?: string | ((props: any) => ReactElement); // i.e. { IconType } from 'react-icons';
   link: string;
 }
 
@@ -64,13 +65,13 @@ export interface Metadata {
 
 export interface AppUrl {
   native?:
-  | string
-  | {
-    android?: string;
-    ios?: string;
-    macos?: string;
-    windows?: string;
-  };
+    | string
+    | {
+        android?: string;
+        ios?: string;
+        macos?: string;
+        windows?: string;
+      };
   universal?: string;
 }
 
@@ -82,11 +83,11 @@ export interface Wallet {
   mobileDisabled: boolean | (() => boolean);
   description?: string;
   rejectMessage?:
-  | {
-    source: string; // message from wallet app
-    target?: string; // message stored in walletManager, default 'Request Rejected!'
-  }
-  | string; // message from wallet app
+    | {
+        source: string; // message from wallet app
+        target?: string; // message stored in walletManager, default 'Request Rejected!'
+      }
+    | string; // message from wallet app
   rejectCode?: number; // code from wallet app
   connectEventNamesOnWindow?: string[];
   connectEventNamesOnClient?: string[];
@@ -245,7 +246,7 @@ export interface WalletClient {
 export type WalletAdapter = ChainWalletBase | MainWalletBase;
 
 export interface IChainWallet {
-  new(walletInfo: Wallet, chainInfo: ChainRecord): ChainWalletBase;
+  new (walletInfo: Wallet, chainInfo: ChainRecord): ChainWalletBase;
 }
 
 export type NameServiceName = string;
