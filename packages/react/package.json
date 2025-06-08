@@ -1,6 +1,6 @@
 {
   "name": "@cosmos-kit/react",
-  "version": "2.21.7",
+  "version": "2.22.0",
   "description": "cosmos-kit wallet connector",
   "author": "developers@hyperweb.io",
   "contributors": [
@@ -76,24 +76,21 @@
   },
   "devDependencies": {
     "@dao-dao/cosmiframe": "^1.0.0-rc.1",
-    "@types/react": "^18.2",
-    "@types/react-dom": "^18.2"
+    "@types/react": "latest",
+    "@types/react-dom": "latest"
   },
   "dependencies": {
     "@chain-registry/types": "^0.46.11",
-    "@cosmos-kit/core": "^2.15.5",
-    "@cosmos-kit/react-lite": "^2.15.8",
+    "@cosmos-kit/core": "^2.16.0",
+    "@cosmos-kit/react-lite": "^2.16.0",
     "@react-icons/all-files": "^4.1.0"
   },
-  "resolutions": {
-    "@types/react": "^18"
-  },
   "peerDependencies": {
-    "@interchain-ui/react": "^1.23.9",
-    "@types/react": ">= 17",
-    "@types/react-dom": ">= 17",
-    "react": "^18",
-    "react-dom": "^18"
+    "@interchain-ui/react": "^1.26.3",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }

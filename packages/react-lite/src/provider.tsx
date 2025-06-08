@@ -16,7 +16,14 @@ import {
   WalletRepo,
 } from '@cosmos-kit/core';
 import { Origin } from '@dao-dao/cosmiframe';
-import { createContext, ReactNode, useEffect, useMemo, useState } from 'react';
+import {
+  createContext,
+  useEffect,
+  useMemo,
+  useState,
+  type ReactElement,
+  type ReactNode,
+} from 'react';
 
 export const walletContext = createContext<{
   walletManager: WalletManager;
@@ -42,7 +49,7 @@ export function ChainProvider({
   chains: (Chain | ChainName)[];
   wallets: MainWalletBase[];
   assetLists?: AssetList[];
-  walletModal?: (props: WalletModalProps) => JSX.Element;
+  walletModal?: (props: WalletModalProps) => ReactElement;
   throwErrors?: boolean | 'connect_only';
   subscribeConnectEvents?: boolean;
   defaultNameService?: NameServiceName;

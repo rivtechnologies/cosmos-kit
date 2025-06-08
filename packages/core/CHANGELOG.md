@@ -3,101 +3,59 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.16.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.15.5...@cosmos-kit/core@2.16.0) (2025-03-25)
+
+### Features
+
+- upgrade react 19 ([a9dd023](https://github.com/hyperweb-io/cosmos-kit/commit/a9dd023dc30aa0f8ecd2a2db5e1c74c5a89b2f12))
+
 ## [2.15.5](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.15.4...@cosmos-kit/core@2.15.5) (2025-01-28)
 
 **Note:** Version bump only for package @cosmos-kit/core
-
-
-
-
 
 ## [2.15.4](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.15.3...@cosmos-kit/core@2.15.4) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/core
 
-
-
-
-
 ## [2.15.3](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.15.2...@cosmos-kit/core@2.15.3) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/core
-
-
-
-
 
 ## [2.15.2](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.15.1...@cosmos-kit/core@2.15.2) (2025-01-18)
 
 **Note:** Version bump only for package @cosmos-kit/core
 
-
-
-
-
 ## [2.15.1](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.15.0...@cosmos-kit/core@2.15.1) (2025-01-07)
 
 **Note:** Version bump only for package @cosmos-kit/core
-
-
-
-
 
 # [2.15.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.14.0...@cosmos-kit/core@2.15.0) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/core
 
-
-
-
-
 # [2.14.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.13.1...@cosmos-kit/core@2.14.0) (2024-10-09)
 
 **Note:** Version bump only for package @cosmos-kit/core
-
-
-
-
 
 ## [2.13.1](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.13.0...@cosmos-kit/core@2.13.1) (2024-06-28)
 
 **Note:** Version bump only for package @cosmos-kit/core
 
-
-
-
-
 # [2.13.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.12.0...@cosmos-kit/core@2.13.0) (2024-06-18)
 
 **Note:** Version bump only for package @cosmos-kit/core
-
-
-
-
 
 # [2.12.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.11.0...@cosmos-kit/core@2.12.0) (2024-05-28)
 
 **Note:** Version bump only for package @cosmos-kit/core
 
-
-
-
-
 # [2.11.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.10.0...@cosmos-kit/core@2.11.0) (2024-05-22)
 
 **Note:** Version bump only for package @cosmos-kit/core
 
-
-
-
-
 # [2.10.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.9.3...@cosmos-kit/core@2.10.0) (2024-05-08)
 
 **Note:** Version bump only for package @cosmos-kit/core
-
-
-
-
 
 ## [2.9.3](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/core@2.9.2...@cosmos-kit/core@2.9.3) (2024-05-07)
 

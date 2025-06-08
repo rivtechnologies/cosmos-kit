@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.13.0](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/exodus@2.12.7...@cosmos-kit/exodus@2.13.0) (2025-03-25)
+
+**Note:** Version bump only for package @cosmos-kit/exodus
+
 ## [2.12.7](https://github.com/hyperweb-io/cosmos-kit/compare/@cosmos-kit/exodus@2.12.6...@cosmos-kit/exodus@2.12.7) (2025-02-01)
 
 **Note:** Version bump only for package @cosmos-kit/exodus
