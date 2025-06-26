@@ -40,7 +40,7 @@ export class RivWalletClient implements WalletClient {
   async suggestToken({ chainId, tokens, type }: SuggestToken) {
     if (type === 'cw20') {
       for (const { contractAddress } of tokens) {
-        await this.client.suggestCW20Token(chainId, contractAddress);
+        await this.client.suggestToken(chainId, contractAddress);
       }
     }
   }
