@@ -7,7 +7,7 @@ import {
 import { OfflineDirectSigner, OfflineSigner } from '@cosmjs/proto-signing';
 import { DirectSignResponse } from '@cosmjs/proto-signing';
 import { BroadcastMode } from '@cosmos-kit/core';
-import type { ChainInfo } from '@keplr-wallet/types';
+import type { ChainInfo, ChainInfoWithoutEndpoints } from '@keplr-wallet/types';
 
 export interface Key {
   readonly name: string;
@@ -27,12 +27,20 @@ export interface RivWallet {
   defaultOptions: {
     sign?: RivWalletSignOptions;
   };
-  disconnect(): Promise<void>;
+  ping(): Promise<void>;
+  /**
+   * Delete permissions granted to origin.
+   * If chain ids are specified, only the permissions granted to each chain id are deleted (In this case, permissions such as getChainInfosWithoutEndpoints() are not deleted).
+   * Else, remove all permissions granted to origin (In this case, permissions that are not assigned to each chain, such as getChainInfosWithoutEndpoints(), are also deleted).
+   *
+   * @param chainIds disable(Remove approve domain(s)) target chain ID(s).
+   */
+  disable(chainIds?: string | string[]): Promise<void>;
   enable(chainIds: string | string[]): Promise<void>;
   suggestToken(chainId: string, contractAddress: string): Promise<void>;
-  suggestCW20Token(chainId: string, contractAddress: string): Promise<void>;
   mode: 'extension';
   getKey(chainId: string): Promise<Key>;
+  getKeysSettled(chainIds: string[]): Promise<Key[]>;
   getOfflineSigner(chainId: string): OfflineAminoSigner & OfflineDirectSigner;
   getOfflineSignerOnlyAmino(chainId: string): OfflineAminoSigner;
   getOfflineSignerAuto(chainId: string): Promise<OfflineSigner>;
@@ -62,25 +70,12 @@ export interface RivWallet {
     signer: string,
     data: string | Uint8Array
   ): Promise<StdSignature>;
-  getEnigmaPubKey(chainId: string): Promise<Uint8Array>;
-  getEnigmaTxEncryptionKey(
-    chainId: string,
-    nonce: Uint8Array
-  ): Promise<Uint8Array>;
-  enigmaEncrypt(
-    chainId: string,
-    contractCodeHash: string,
-    msg: object
-  ): Promise<Uint8Array>;
-  enigmaDecrypt(
-    chainId: string,
-    ciphertext: Uint8Array,
-    nonce: Uint8Array
-  ): Promise<Uint8Array>;
+  getChainInfosWithoutEndpoints(): Promise<ChainInfoWithoutEndpoints[]>;
+  getChainInfoWithoutEndpoints(chainId: string): Promise<ChainInfoWithoutEndpoints>;
+  experimentalSuggestChain(chainInfo: ChainInfo): Promise<void>;
   sendTx(
     chainId: string,
     tx: Uint8Array,
     mode: BroadcastMode
   ): Promise<Uint8Array>;
-  experimentalSuggestChain(chainInfo: ChainInfo): Promise<void>;
 }

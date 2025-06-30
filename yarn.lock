@@ -2563,6 +2563,13 @@
   dependencies:
     long "^4.0.0"
 
+"@keplr-wallet/types@^0.12.247":
+  version "0.12.247"
+  resolved "https://registry.yarnpkg.com/@keplr-wallet/types/-/types-0.12.247.tgz#8cd14a9ba345b2b964b9fea7ea834298f99131c9"
+  integrity sha512-HnHbiBE2AoXY6Q3oY+MYjPQhyjyI+N0007IguZGYOVWlR/y/PobTY+i1lY2RlKYTp4NEHqe5qoxBuG+nPe6ENg==
+  dependencies:
+    long "^4.0.0"
+
 "@keplr-wallet/unit@0.12.28":
   version "0.12.28"
   resolved "https://registry.yarnpkg.com/@keplr-wallet/unit/-/unit-0.12.28.tgz#907c7fa0b49a729cda207fca14fc0a38871cc6c4"

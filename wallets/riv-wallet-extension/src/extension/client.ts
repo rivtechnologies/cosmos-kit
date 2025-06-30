@@ -65,7 +65,7 @@ export class RivWalletClient implements WalletClient {
   }
 
   async disconnect() {
-    await this.client.disconnect();
+    await this.client.disable();
   }
 
   async getSimpleAccount(chainId: string) {
@@ -151,4 +151,5 @@ export class RivWalletClient implements WalletClient {
   async sendTx(chainId: string, tx: Uint8Array, mode: BroadcastMode) {
     return await this.client.sendTx(chainId, tx, mode);
   }
+
 }
