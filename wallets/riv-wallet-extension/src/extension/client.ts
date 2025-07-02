@@ -65,7 +65,7 @@ export class RivWalletClient implements WalletClient {
   }
 
   async disconnect() {
-    await this.client.disable();
+    await this.client.disconnect();
   }
 
   async getSimpleAccount(chainId: string) {
@@ -102,7 +102,20 @@ export class RivWalletClient implements WalletClient {
   }
 
   getOfflineSignerAmino(chainId: string) {
-    return this.client.getOfflineSignerOnlyAmino(chainId);
+    return {
+      getAccounts: async () => {
+        return [await this.getAccount(chainId)];
+      },
+      signAmino: async (signerAddress, signDoc) => {
+        return this.signAmino(
+          chainId,
+          signerAddress,
+          signDoc,
+          this.defaultSignOptions
+        );
+      },
+    };
+    // return this.client.getOfflineSignerOnlyAmino(chainId);
   }
 
 

@@ -35,7 +35,7 @@ export interface RivWallet {
    *
    * @param chainIds disable(Remove approve domain(s)) target chain ID(s).
    */
-  disable(chainIds?: string | string[]): Promise<void>;
+  disconnect(chainIds?: string | string[]): Promise<void>;
   enable(chainIds: string | string[]): Promise<void>;
   suggestToken(chainId: string, contractAddress: string): Promise<void>;
   mode: 'extension';
