@@ -105,9 +105,31 @@ export class RivWalletClient implements WalletClient {
     return this.client.getOfflineSignerOnlyAmino(chainId);
   }
 
-  getOfflineSignerDirect(chainId: string) {
-    return this.client.getOfflineSigner(chainId) as OfflineDirectSigner;
+
+  getOfflineSignerDirect(chainId: string): OfflineDirectSigner {
+    return {
+      getAccounts: async () => {
+        return [await this.getAccount(chainId)];
+      },
+      signDirect: async (signerAddress, signDoc) => {
+        const resp = await this.signDirect(
+          chainId,
+          signerAddress,
+          signDoc,
+          this.defaultSignOptions
+        );
+        return {
+          ...resp,
+          signed: {
+            ...resp.signed,
+            accountNumber: BigInt(resp.signed.accountNumber.toString()),
+          },
+        };
+      },
+    };
+    // return this.client.getOfflineSigner(chainId) as OfflineDirectSigner;
   }
+
 
   async signAmino(
     chainId: string,
