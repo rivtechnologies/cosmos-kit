@@ -117,11 +117,11 @@ cd packages/example
 yarn dev
 ```
 
-#### [Basic Next.js Example](https://github.com/hyperweb-io/cosmos-kit/tree/main/packages/example)
+#### [Basic Next.js Example](https://github.com/hyperweb-io/cosmos-kit/tree/main/examples)
 
 This example demonstrates a Next.js project that integrates the `@cosmos-kit/react` wallet adapter. Note that this example has historically been used by multiple teams to test PRs.
 
-#### ["vanilla" example showing how `WalletManager` works](https://github.com/hyperweb-io/cosmos-kit/tree/main/packages/example/pages/wallet-manager)
+#### ["vanilla" example showing how `WalletManager` works](https://github.com/hyperweb-io/cosmos-kit/tree/main/examples/cosmos-kit-nextjs-pages-router-example/pages/wallet-manager)
 
 This example is ideal for developers looking to create integrations for Vue.js, Svelte, or other frameworks. It uses a basic Next.js setup without relying on React-specific hooks, providing a clear model for building custom integrations.
 
