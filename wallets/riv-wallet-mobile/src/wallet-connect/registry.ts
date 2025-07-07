@@ -7,8 +7,7 @@ export const rivWalletMobileInfo: Wallet = {
   prettyName: 'RIV Wallet Mobile',
   logo: ICON,
   mode: 'wallet-connect',
-  // mobileDisabled: () => 'rivWallet' in window && /RIVWalletBrowser/i.test(navigator.userAgent),
-  mobileDisabled: false,
+  mobileDisabled: () => 'rivWallet' in window && /RIVWalletBrowser/i.test(navigator.userAgent),
   rejectMessage: {
     source: 'Request rejected',
   },
