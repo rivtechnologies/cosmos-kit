@@ -2,12 +2,13 @@ import { OS, Wallet } from '@cosmos-kit/core';
 
 import { ICON } from '../constant';
 
-export const RivWalletMobileInfo: Wallet = {
+export const rivWalletMobileInfo: Wallet = {
   name: 'riv-wallet-mobile',
   prettyName: 'RIV Wallet Mobile',
   logo: ICON,
   mode: 'wallet-connect',
-  mobileDisabled: () => 'rivWallet' in window && /RIVWalletBrowser/i.test(navigator.userAgent),
+  // mobileDisabled: () => 'rivWallet' in window && /RIVWalletBrowser/i.test(navigator.userAgent),
+  mobileDisabled: false,
   rejectMessage: {
     source: 'Request rejected',
   },
@@ -26,7 +27,7 @@ export const RivWalletMobileInfo: Wallet = {
   ],
   connectEventNamesOnWindow: ['rivWallet_keystorechange'],
   walletconnect: {
-    name: 'Riv Wallet',
+    name: 'RIV Wallet',
     projectId:
       '31393502b32bbb007fcb74367656a389',
     encoding: 'base64',
