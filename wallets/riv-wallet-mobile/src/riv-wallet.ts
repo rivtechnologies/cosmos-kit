@@ -1,5 +1,5 @@
-import { RivWalletMobileInfo, RivWalletMobileWallet } from './wallet-connect';
+import { rivWalletMobileInfo, RivWalletMobileWallet } from './wallet-connect';
 
-const rivWalletMobile = new RivWalletMobileWallet(RivWalletMobileInfo);
+const rivWalletMobile = new RivWalletMobileWallet(rivWalletMobileInfo);
 
 export const wallets = [rivWalletMobile];
