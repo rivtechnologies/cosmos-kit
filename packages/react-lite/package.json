@@ -81,7 +81,7 @@
   "dependencies": {
     "@chain-registry/types": "^0.46.11",
     "@cosmos-kit/core": "^2.16.1",
-    "@dao-dao/cosmiframe": "^1.0.0-rc.1"
+    "@dao-dao/cosmiframe": "^1.0.0"
   },
   "peerDependencies": {
     "@types/react": "latest",
