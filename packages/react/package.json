@@ -75,7 +75,7 @@
     ]
   },
   "devDependencies": {
-    "@dao-dao/cosmiframe": "^1.0.0-rc.1",
+    "@dao-dao/cosmiframe": "^1.0.0",
     "@types/react": "latest",
     "@types/react-dom": "latest"
   },
