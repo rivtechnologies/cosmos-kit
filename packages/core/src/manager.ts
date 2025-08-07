@@ -348,7 +348,8 @@ export class WalletManager extends StateBase {
 
   private _reconnect = async (
     walletName: WalletName,
-    checkConnection = false
+    checkConnection = false,
+    onlyChainNames?: ChainName[]
   ) => {
     if (
       checkConnection &&
@@ -359,9 +360,21 @@ export class WalletManager extends StateBase {
     this.logger?.debug('[Event Emit] `refresh_connection` (manager)');
     this.coreEmitter.emit('refresh_connection');
     await this.getMainWallet(walletName).connect();
-    await this.getMainWallet(walletName)
-      .getChainWalletList(true)[0]
-      ?.connect(true);
+    await Promise.all(
+      this.getMainWallet(walletName)
+        .getChainWalletList(true)
+        .map((w, index) =>
+          !onlyChainNames
+            ? // If no chains specified, just connect the first chain wallet and sync to all active chain wallets.
+              index === 0
+              ? w.connect(true)
+              : undefined
+            : // If chains specified, connect only the specified chains, without sync.
+            onlyChainNames.includes(w.chainName)
+            ? w.connect(false)
+            : undefined
+        )
+    );
   };
 
   private _restoreAccounts = async () => {
@@ -375,6 +388,7 @@ export class WalletManager extends StateBase {
         const mainWallet = this.getMainWallet(walletName);
         mainWallet.activate();
 
+        let onlyChainNames: ChainName[] | undefined;
         if (mainWallet.clientMutable.state === State.Done) {
           const accountsStr = window.localStorage.getItem(
             'cosmos-kit@2:core//accounts'
@@ -462,11 +476,15 @@ export class WalletManager extends StateBase {
                 return;
               }
             }
+
+            onlyChainNames = connectedChainRecords.map(
+              (chainRecord) => chainRecord.name
+            );
           }
         }
 
         if (mainWallet.walletInfo.mode !== 'wallet-connect') {
-          await this._reconnect(walletName);
+          await this._reconnect(walletName, undefined, onlyChainNames);
         }
       } catch (error) {
         if (error instanceof WalletNotProvidedError) {
