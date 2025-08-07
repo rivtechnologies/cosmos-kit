@@ -381,21 +381,87 @@ export class WalletManager extends StateBase {
           );
           if (accountsStr && accountsStr !== '[]') {
             const accounts: SimpleAccount[] = JSON.parse(accountsStr);
-            accounts.forEach((data) => {
-              const chainWallet = mainWallet
-                .getChainWalletList(false)
-                .find(
-                  (w) =>
-                    w.chainRecord.chain?.chain_id === data.chainId &&
-                    w.namespace === data.namespace
-                );
-              chainWallet?.activate();
-              if (mainWallet.walletInfo.mode === 'wallet-connect') {
-                chainWallet?.setData(data);
-                chainWallet?.setState(State.Done);
+
+            const accountChainWallets = accounts.flatMap(
+              (data): ChainWalletBase | [] => {
+                const chainWallet = mainWallet
+                  .getChainWalletList(false)
+                  .find(
+                    (w) =>
+                      w.chainRecord.chain?.chain_id === data.chainId &&
+                      w.namespace === data.namespace
+                  );
+                chainWallet?.activate();
+                if (mainWallet.walletInfo.mode === 'wallet-connect') {
+                  chainWallet?.setData(data);
+                  chainWallet?.setState(State.Done);
+                }
+                return chainWallet || [];
               }
-            });
+            );
+
             mainWallet.setState(State.Done);
+
+            // Activate all repos for the account chains and get their chain
+            // records.
+            const connectedChainRecords = accountChainWallets.flatMap(
+              (chainWallet): ChainRecord | [] => {
+                try {
+                  const repo = this.getWalletRepo(chainWallet.chainName);
+                  repo.activate();
+                  return repo.chainRecord;
+                } catch {
+                  return [];
+                }
+              }
+            );
+
+            const attemptConnectAll = async () => {
+              try {
+                await mainWallet.client?.enable?.(
+                  connectedChainRecords.map(
+                    (chainRecord) => chainRecord.chain.chain_id
+                  )
+                );
+                return true;
+              } catch (error) {
+                // If the error is a wallet rejection, log and return false to
+                // indicate user rejection. Do not throw to continue.
+                if (error instanceof Error && mainWallet.rejectMatched(error)) {
+                  this.logger?.error(
+                    `Failed to connect to stored chains: ${error.message}`
+                  );
+                  return false;
+                }
+
+                throw error;
+              }
+            };
+
+            // Connect to all chains at once. On error (other than user
+            // rejection), attempt to add each chain and try again.
+            try {
+              const rejected = !(await attemptConnectAll());
+              // If user rejected, do not call `_reconnect` at the bottom or
+              // else every chain wallet will attempt to connect to all chains
+              // again.
+              if (rejected) {
+                return;
+              }
+            } catch (error) {
+              // If failed to enable, add each chain and try again.
+              for (const chainRecord of connectedChainRecords) {
+                await mainWallet.client?.addChain?.(chainRecord);
+              }
+
+              const rejected = !(await attemptConnectAll());
+              // If user rejected, do not call `_reconnect` at the bottom or
+              // else every chain wallet will attempt to connect to all chains
+              // again.
+              if (rejected) {
+                return;
+              }
+            }
           }
         }
 
