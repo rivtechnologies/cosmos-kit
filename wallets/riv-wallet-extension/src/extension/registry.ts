@@ -8,7 +8,7 @@ export const rivWalletExtensionInfo: Wallet = {
   logo: ICON,
   mode: 'extension',
   mobileDisabled: () =>
-    !('rivWallet' in window || /RivWalletBrowser/i.test(navigator.userAgent)),
+    !('rivWallet' in window || /RIVWalletBrowser/i.test(navigator.userAgent)),
   rejectMessage: {
     source: 'Request rejected',
   },
