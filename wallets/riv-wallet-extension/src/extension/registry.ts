@@ -8,11 +8,11 @@ export const rivWalletExtensionInfo: Wallet = {
   logo: ICON,
   mode: 'extension',
   mobileDisabled: () =>
-    !('rivWallet' in window || /RIVWalletBrowser/i.test(navigator.userAgent)),
+    !('rivwallet' in window || /RIVWalletBrowser/i.test(navigator.userAgent)),
   rejectMessage: {
     source: 'Request rejected',
   },
-  connectEventNamesOnWindow: ['rivWallet_keystorechange'],
+  connectEventNamesOnWindow: ['rivwallet_keystorechange'],
   downloads: [
     {
       device: 'mobile',

@@ -3,7 +3,7 @@ import { ClientNotExistError } from '@cosmos-kit/core';
 import { RivWallet } from './types';
 
 interface RivWalletWindow {
-  rivWallet?: RivWallet;
+  rivwallet?: RivWallet;
 }
 
 export const getRivWalletFromExtension: () => Promise<
@@ -13,7 +13,7 @@ export const getRivWalletFromExtension: () => Promise<
     return void 0;
   }
 
-  const rivWallet = (window as RivWalletWindow).rivWallet;
+  const rivWallet = (window as RivWalletWindow).rivwallet;
 
   if (rivWallet) {
     return rivWallet;
