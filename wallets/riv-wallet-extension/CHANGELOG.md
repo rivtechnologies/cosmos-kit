@@ -5,4 +5,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [2.15.0] (2025-06-26)
 
-**Note:** Riv Wallet integration.
+**Note:** RIV Wallet Extension integration.
