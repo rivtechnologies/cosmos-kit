@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "2.31.3",
+  "version": "2.31.4",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -33,7 +33,7 @@
     "@cosmos-kit/fin": "^2.14.3",
     "@cosmos-kit/foxwallet": "^1.1.2",
     "@cosmos-kit/ins": "^2.2.5",
-    "@cosmos-kit/keplr": "^2.15.3",
+    "@cosmos-kit/keplr": "^2.15.4",
     "@cosmos-kit/leap": "^2.15.3",
     "@cosmos-kit/leap-capsule-social-login": "^0.13.3",
     "@cosmos-kit/leap-metamask-cosmos-snap": "^0.15.3",
