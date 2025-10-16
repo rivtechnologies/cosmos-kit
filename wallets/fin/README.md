@@ -25,7 +25,7 @@ Cosmos Kit is a universal wallet adapter for developers to build apps that quick
 
 ## Credits
 
-🛠 Built by Interweb — if you like our tools, please checkout and contribute to [our ecosystem](https://interweb.co)
+🛠 Built by [Interweb](https://interweb.co) — if you like our tools, please checkout and contribute [https://interweb.co](https://interweb.co)
 Code built with the help of these related projects:
 
 - [create-cosmos-app](https://github.com/hyperweb-io/create-cosmos-app) Set up a modern Cosmos app by running one command ⚛️

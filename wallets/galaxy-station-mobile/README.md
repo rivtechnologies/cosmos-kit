@@ -37,7 +37,7 @@ Checkout these related projects:
 
 ## Credits
 
-🛠 Built by Interweb — if you like our tools, please checkout and contribute to [our ecosystem](https://interweb.co)
+🛠 Built by [Interweb](https://interweb.co) — if you like our tools, please checkout and contribute [https://interweb.co](https://interweb.co)
 
 ## Disclaimer
 
